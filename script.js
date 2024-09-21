@@ -15,3 +15,11 @@ menuItem.forEach((item) => {
   });
 });
 
+document.addEventListener("scroll", () => {
+  var score_position = window.scrollY;
+  if (score_position > 250) {
+    header.style.backgroundColor = "#29323c";
+  } else {
+    header.style.backgroundColor = "transparent";
+  }
+});
